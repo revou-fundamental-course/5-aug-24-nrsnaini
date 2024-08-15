@@ -82,6 +82,10 @@ aside.right-flex {
     color: transparent;
 }
 
+p, li {
+    text-align: justify;
+}
+
 /* Form */
 .left-flex form {
     padding: 16px;
