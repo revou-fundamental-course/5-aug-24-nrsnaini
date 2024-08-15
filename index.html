@@ -3,10 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css\styles.css">
 </head>
 <body>
+    <header>
+        <h1 class="main-title">BMI Calculator</h1>
+    </header>
+
+    <main>
+
+        <!-- LEFT FLEX - Calculator -->
+        <aside class="left-flex">
+            <article>
+                <p>BMI Calculator is a tool helps you determine your Body Mass Index based on weight and height. BMI is a simple calculation used to assess whether you are underweight, normal weight, overweight, or obese.</p>
+            </article>
+
+            <form>
+                <div>
+                    <h3>Gender</h3>
+
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
     
+                <div>
+                    <h3>Weight</h3>
+                    <input type="number" id="weight" placeholder="Type your weight">
+                </div>
+    
+                <div>
+                    <h3>Height</h3>
+                    <input type="number" id="height" placeholder="Type your height">
+                </div>
+    
+                <div>
+                    <h3>Age</h3>
+                    <input type="number" id="age" placeholder="Type your age">
+                </div>
+
+                <div class="form-btn-container">
+                    <button type="button" class="btn" onclick="formValidate()">Calculate BMI</button>
+                    <button type="reset" class="btn btn-reset">Reset</button>
+                </div>
+            </form>
+    
+            <article>
+                <header>
+                    <h2 class="subtitle">Why Use BMI Calculator?</h2>
+                </header>
+
+                <p>Body Mass Index (BMI) is a straightforward measure that estimates body fat based on your weight and height. It is calculated by dividing weight in kilograms by their height in metres squared = kg/m<sup>2</sup></p>
+    
+                <p>Using BMI calculator offers several benefits:</p>
+
+                <ul style="padding-left: 30px;">
+                    <li>Track your weight</li>
+                    <li>Support your diet plan</li>
+                    <li>Health awareness</li>
+                </ul>
+                
+                <p>The BMI calculator is designed <strong>for adults</strong>. Pregnant or breastfeeding women should not rely on BMI results. Always consult with a healthcare professional for personalized advice.</p>
+            </article>
+        </aside>
+
+        <!-- RIGHT FLEX - Result -->
+        <aside class="right-flex">
+            <section>
+                <header>
+                    <h2 class="subtitle subtitle-result">Your BMI Result is</h2>
+                </header>
+
+                <div class="result">
+                    <h2 id="bmi-result">00.00</h2>
+                    <h3 id="bmi-status">Normal Weight</h3>
+                    <button class="btn">Download BMI Result</button>
+                </div>
+
+                <div class="explanation">
+                    <p class="bmi-explanation">Lorem ipsum dolor sit amet</p>
+                    <p class="more-explanation">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </section>
+        </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>&copy 2024 BMI Calculator</h3>
+    </footer>
+
+    <script src="js\script.js"></script>
 </body>
 </html>
